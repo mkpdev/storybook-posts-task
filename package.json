@@ -1,0 +1,63 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul",
+          "babel-plugin-rewire"
+        ]
+      },
+      "browser": true,
+      "es6": true,
+      "jest": true
+    }
+  },
+   
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "devDependencies": {
+    "@storybook/addon-storyshots": "^3.3.15",
+    "@storybook/react": "^3.3.15",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^15.6.2",
+    "storybook-addon-redux-listener": "^0.1.7",
+    "storybook-router": "^0.3.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-jest": "^22.4.3",
+    "react": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
+  }
+}
