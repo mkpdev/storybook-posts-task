@@ -1,0 +1,35 @@
+img {
+    border: 1px solid #111111;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: #DDDDDD;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
